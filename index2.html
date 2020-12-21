@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: blanchedalmond;">
+    <body>
+        
+    <div style="margin-left: 400px;">
+        <h1  style="color: black; background-color: burlywood ; width: 450px;">  Calculator and Shape Changer</h1>
+        <h2 style="color: black; background-color: burlywood;width: 450px">Calculator</h2>
+        <input type="number" placeholder="first number" id="fno">
+        <input type="number" placeholder="second number" id="sno">
+        <h4 id="add">result : </h4>
+        <h4 id="subtract">result : </h4>
+        <h4 id="multiply">result : </h4>
+        <h4 id="divide">result : </h4>
+        <br>          
+        <button onclick="sum()">add</button>
+        <br>
+        <button onclick="subtract()">subtract</button>
+        <br>
+        <button onclick="multiply()">multiply</button>
+        <br>
+        <button onclick="divide()">divide</button>
+        
+    </body>
+    <script>
+        function sum(){  
+          var sum=document.getElementById('add');
+          var fno=document.getElementById('fno').value;
+          var sno=document.getElementById('sno').value;
+          sum.innerHTML=Number(fno)+Number(sno);
+          }
+         
+    </script>
+
+    <script>
+        function subtract()
+        {
+            var subtract=document.getElementById('subtract')
+            var fno=document.getElementById('fno').value;
+            var sno=document.getElementById('sno').value;
+            subtract.innerHTML=Number(fno)-Number(sno)
+        }
+    </script>
+
+<script>
+  function multiply()
+  {
+      var multiply=document.getElementById('multiply')
+      var fno=document.getElementById('fno').value;
+      var sno=document.getElementById('sno').value;
+      multiply.innerHTML=Number(fno)*Number(sno)
+  }
+</script>
+
+<script>
+  function divide()
+  {
+      var divide=document.getElementById('divide')
+      var fno=document.getElementById('fno').value;
+      var sno=document.getElementById('sno').value;
+      divide.innerHTML=Number(fno)/Number(sno)
+  }
+</script>
+
+<body>
+    <br>
+    <h2 style="color: black; background-color: burlywood; width: 450px;">Shape changer</h2>
+<div style="height: 300px;width: 400px;">
+    <div id="shape" style="height: 100px; width: 200px; background-color: brown;">
+</div>
+        <br>
+    <button onclick="square()">Square</button>
+    <br>
+    <button onclick="rectangle()">Rectangle</button>
+    <br>
+     <button onclick="circle()">Circle</button>   
+        
+</body>  
+
+    <script>
+            function square()
+            {
+                document.getElementById('shape').style['width']='100px';
+                document.getElementById('shape').style['background-color']='red';
+                
+            }
+    </script>
+   
+   <script>
+
+    function rectangle()
+    {
+        document.getElementById('shape').style['width']='100px';
+        document.getElementById('shape').style['height']='50px';
+        document.getElementById('shape').style['background-color']='yellow';
+        
+    }
+</script>
+
+<script>
+   
+    function circle()
+    {
+        document.getElementById('shape').style['border-radius']='100%';
+        document.getElementById('shape').style['width']='100px';
+        document.getElementById('shape').style['background-color']='green';
+       
+    }
+</script>
+
+</div>
+
+</body>
+</html>
