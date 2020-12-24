@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+</head>
+<style>
+    img{
+        border-radius: 5px;
+      }
+div{
+    animation-name: harry;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    
+}
+
+@keyframes harry{
+0%{margin:0%;}
+20%{margin-left: 10%; margin-top: 10%;}
+40%{margin-top: 20%;margin-left: 20%;}
+60%{margin-top: 35%; margin-left: 40%;}
+80%{margin-top: 20%; margin-left: 50%;}
+100%{margin-top: 0%;margin-left: 70%;}
+}
+</style>
+
+<body background="image/clouds.jpg"  >
+        <h1 style="color:slategray ;margin-left: 400px;" >Welcome to magical world</h1>
+    <div>
+        <img src="image/harry.jpg" >
+    </div>
+</body>
+</html>
