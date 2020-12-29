@@ -13,23 +13,27 @@ div{
     animation-name: harry;
     animation-duration: 5s;
     animation-iteration-count: infinite;
+    margin-top: 15%;
+    margin-left: 35%;
     
-}
+    }
+
+     
 
 @keyframes harry{
-0%{margin:0%;}
-20%{margin-left: 10%; margin-top: 10%;}
-40%{margin-top: 20%;margin-left: 20%;}
-60%{margin-top: 35%; margin-left: 40%;}
-80%{margin-top: 20%; margin-left: 50%;}
-100%{margin-top: 0%;margin-left: 70%;}
-}
+    0% {display: none;
+    opacity: 0}
+
+    100% {display: block;
+    opacity: 0.35;}
+   }
 </style>
 
 <body background="image/clouds.jpg"  >
-        <h1 style="color:slategray ;margin-left: 400px;" >Welcome to magical world</h1>
+        <h1 style="color:slategray ;margin-left: 450px; " >Welcome to magical world</h1>
     <div>
-        <img src="image/harry.jpg" >
+        <img src="image/harry.jpg"  >
+        <embed src="/image/harry-potter-theme.mp3" loop="true" autostart="true" width="2" height="0">
     </div>
 </body>
 </html>
